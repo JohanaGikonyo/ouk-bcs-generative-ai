@@ -37,22 +37,22 @@ def get_personality(name: str) ->Personality by llm;
 
 
 with entry {
-    # question: str = "What is Log 1000?";
+    question: str = "What is Log 1000?";
 
-    # # Short yes/no style using the enum
-    # answer: Tell = yes_or_no(question);
+    # Short yes/no style using the enum
+    answer: Tell = yes_or_no(question);
 
-    # # Free-text explanation from the model
-    # explanation: str = explain(question);
+    # Free-text explanation from the model
+    explanation: str = explain(question);
 
-    # answer2: str = give_answer(question);
+    answer2: str = give_answer(question);
 
-    # print(f'Question: {question}');
-    # # print(f'Yes/No Answer: {answer.value}');
-    # print(f'Explanation: {explanation}');
-    # print(f'Answer: {answer2}');
-    # question: str = "Translate 'What is Log 1000?' to Kiswahili";
-    # print(f'Question: {question} : {translate(question, "Kiswahili")}');
+    print(f'Question: {question}');
+    # print(f'Yes/No Answer: {answer.value}');
+    print(f'Explanation: {explanation}');
+    print(f'Answer: {answer2}');
+    question: str = "Translate 'What is Log 1000?' to Kiswahili";
+    print(f'Question: {question} : {translate(question, "Kiswahili")}');
     name: str = "Albert Einstein";
     results = get_personality(name);
     print(f'Name: {name} Personality: {results.value} ');
